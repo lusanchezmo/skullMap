@@ -110,7 +110,7 @@ function gameWin(){
     const playerTime = Date.now() - timeStart;
 
     if(recordTime){
-        if(recordTime > playerPosition){
+        if(recordTime > playerTime){
             localStorage.setItem('record_time', playerTime);
             pResult.innerHTML = 'SUPERASTE EL RECORD';
         } else {
